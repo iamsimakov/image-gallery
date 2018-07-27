@@ -5,33 +5,27 @@
 ## Requirements
 
 * ImageMagick
-* Ruby 2.1.2
-* Rails 4.1.4
+* Ruby 2.4.1
+* Rails 5.2.0
+* Mysql server: user - root, empty password
 
 ## Setup
 
-* Copy `.env` file
-
-```bash
-cp .env.example .env
-```
-
-* Change the `.env` variables
+* Clone it
 
 * Bundle install
 
 ```bash
 bundle install
 ```
-
-* Install foreman
+* Config your connect to db
 
 ```bash
-gem install foreman
+config/database.yml
 ```
 
-* Run foreman
+* Run it
 
 ```bash
-foreman start
+rails s
 ```
